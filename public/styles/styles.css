@@ -1,0 +1,220 @@
+body {
+    background-color: #4c7766;
+    font-family: "Montserrat Alternates", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 7%;
+    position: relative;
+    padding-bottom: 0;
+    top: 20px;
+}
+
+.logo-container {
+    display: flex;
+    gap: 10px;
+}
+
+.spf-img {
+    height: 40px;
+}
+
+.logo-name {
+    color: #ebe6e0;
+    margin-top: 8px;
+    font-size: 1.5rem;
+}
+
+.about-link, .check-btn, .return-btn {
+    text-decoration: none;
+    color: #4c7766;
+    font-size: 0.9rem;
+    background-color: #ebe6e0;
+    padding: 8px;
+    margin-top: 7px;
+    height: 20px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.about-link:hover, .return-btn:hover, .check-btn:hover {
+    color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.boy-img {
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    background-color: #ebe6e0;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.title {
+    color: #ebe6e0;
+    font-size: 2.4rem;
+}
+
+input, button {
+    font-family: "Montserrat Alternates", sans-serif;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+.protect-btn {
+    color: #4c7766;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.advice-banner {
+    background-color: #ebe6e0;
+    color: #4c7766;
+    padding: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 5px;
+    position: relative;
+    top: 25px;
+}
+
+.result-card {
+    background-color: #ebe6e0;
+    text-align: center;
+    width: 50%;
+    margin: 20px 0;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.uv-index {
+    color: #4c7766;
+}
+
+.advice {
+    color: #4c7766;
+}
+
+.about-paragraph {
+    text-align: center;
+    color: #ebe6e0;
+    font-size: 1.1rem;
+}
+
+.table-caption {
+    color: #ebe6e0;
+    margin-bottom: 5px;
+}
+
+table {
+    color: #4c7766;
+    background-color: #ebe6e0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+tr, th, td {
+    border: 1px dotted #4c7766;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.check-btn {
+    margin-top: 20px;
+}
+
+.footer-paragraph {
+    text-align: center;
+    color: #ebe6e0;
+    font-size: 0.8rem;
+    margin-top: 30px;
+}
+
+.copyright-symbol {
+    font-size: 0.7rem;
+    margin-right: 1px;
+}
+
+
+@media(max-width: 425px) {
+    .logo-container {
+        margin-bottom: 50px;
+        gap: 6px;
+    }
+    .spf-img {
+        height: 25px;
+    }
+    .logo-name {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+    .about-link, .return-btn {
+        margin-top: 0;
+        font-size: 0.8rem;
+        height: 16px;
+    }
+    /* .container {
+        height: 100vh;
+    } */
+    .boy-img {
+        height: 60px;
+    }
+    .title {
+        font-size: 1.1rem;
+    }
+    input {
+        font-size: 0.7rem;
+    }
+    .protect-btn {
+        font-size: 0.7rem;
+    }
+    .result-card {
+        padding: 5px;
+    }
+    .uv-index {
+        font-size: 1.2rem;
+    }
+    .advice {
+        font-size: 1rem;
+    }
+    .error {
+        font-size: 0.8rem;
+    }
+    .about-paragraph {
+        font-size: 0.8rem;
+    }
+    .footer-paragraph {
+        margin-top: 40px;
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 769px) {
+    .title {
+        font-size: 1.7rem;
+    }
+    .boy-img {
+        height: 80px;
+    }
+}

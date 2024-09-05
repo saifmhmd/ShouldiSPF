@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShouldiSPF</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Manrope:wght@200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img class="spf-img" src="/images/spf.png" alt="spf-img">
+            <h2 class="logo-name">ShouldiSPF'</h2>
+        </div>
+        <a href="/about" class="about-link">about this site!</a>
+    </header>
+    <div class="container">
+        <img src="/images/boy.png" class="boy-img" alt="boy-img">
+        <h1 class="title">Let's Protect your skin from sun.</h1>
+        <form action="/protect" method="post">
+            <input type="text" name="city" required="true" placeholder="Enter your city name.">
+            <button type="submit" class="protect-btn">Protect</button>
+        </form>
+
+        <section class="result-container">
+            <% if (locals.error) { %>
+                <p class="error"> <%= error %> </p>
+                <a class="return-btn" href="/">Check another city</a>
+            <% } else if (locals.cityName && locals.uvIndex !== null) { %>
+                <div class="advice-banner">advice</div>
+                <div class="result-card">
+                    <h2 class="uv-index">UV index is '<%= uvIndex %>' </h2>
+                    <p class="advice"> <%= advice %> </p>
+                </div>
+                <a class="return-btn" href="/">Check another city</a>
+            <% } %>
+        </section>
+    </div>
+
+    <footer>
+        <p class="footer-paragraph">Made with love by <span class="copyright-symbol">©</span>saifmhmd.</p>
+    </footer>
+    
+</body>
+</html>
