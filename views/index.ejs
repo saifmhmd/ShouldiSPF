@@ -29,20 +29,20 @@
         <section class="result-container">
             <% if (locals.error) { %>
                 <p class="error"> <%= error %> </p>
-                <a class="return-btn" href="/">Check another city</a>
+                <a class="return-link" href="/">Check another city</a>
             <% } else if (locals.cityName && locals.uvIndex !== null) { %>
                 <div class="advice-banner">advice</div>
                 <div class="result-card">
                     <h2 class="uv-index">UV index is '<%= uvIndex %>' </h2>
                     <p class="advice"> <%= advice %> </p>
                 </div>
-                <a class="return-btn" href="/">Check another city</a>
+                <a class="return-link" href="/">Check another city</a>
             <% } %>
         </section>
     </div>
 
     <footer>
-        <p class="footer-paragraph">Made with love by <span class="copyright-symbol">©</span>saifmhmd.</p>
+        <p class="footer-paragraph">Made with love by <span class="copyright-symbol">©</span><a href="https://www.instagram.com/saifmhmdh" class="insta-link">saifmhmd.</a></p>
     </footer>
     
 </body>

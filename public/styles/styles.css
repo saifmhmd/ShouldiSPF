@@ -20,28 +20,30 @@ header {
 }
 
 .spf-img {
-    height: 40px;
+    height: 35px;
 }
 
 .logo-name {
     color: #ebe6e0;
-    margin-top: 8px;
+    margin: auto;
     font-size: 1.5rem;
 }
 
-.about-link, .check-btn, .return-btn {
+.about-link,
+.return-link {
     text-decoration: none;
     color: #4c7766;
     font-size: 0.9rem;
     background-color: #ebe6e0;
     padding: 8px;
-    margin-top: 7px;
-    height: 20px;
     border-radius: 6px;
     transition: all 0.2s ease;
 }
 
-.about-link:hover, .return-btn:hover, .check-btn:hover {
+.about-link:hover,
+.return-link:hover,
+.check-link:hover,
+.insta-link:hover {
     color: black;
 }
 
@@ -103,7 +105,7 @@ input, button {
     text-align: center;
     width: 50%;
     margin: 20px 0;
-    padding: 7px;
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -113,6 +115,10 @@ input, button {
 
 .advice {
     color: #4c7766;
+}
+
+.error {
+    color: orange;
 }
 
 .about-paragraph {
@@ -133,15 +139,21 @@ table {
     padding: 5px;
 }
 
+table {
+    margin-top: 7px;
+}
+
 tr, th, td {
     border: 1px dotted #4c7766;
     border-radius: 5px;
     padding: 5px;
-    margin: 5px;
 }
 
-.check-btn {
+.check-link {
+    color: #ebe6e0;
     margin-top: 20px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
 }
 
 .footer-paragraph {
@@ -149,6 +161,12 @@ tr, th, td {
     color: #ebe6e0;
     font-size: 0.8rem;
     margin-top: 30px;
+}
+
+.insta-link {
+    text-decoration: none;
+    color: #ebe6e0;
+    transition: all 0.3s ease;
 }
 
 .copyright-symbol {
@@ -169,44 +187,40 @@ tr, th, td {
         font-size: 1rem;
         margin-top: 5px;
     }
-    .about-link, .return-btn {
-        margin-top: 0;
-        font-size: 0.8rem;
-        height: 16px;
+    .about-link,
+    .return-link {
+        font-size: 0.7rem;
+        height: 15px;
     }
-    /* .container {
-        height: 100vh;
-    } */
     .boy-img {
         height: 60px;
     }
     .title {
         font-size: 1.1rem;
     }
-    input {
-        font-size: 0.7rem;
-    }
-    .protect-btn {
-        font-size: 0.7rem;
+    input,
+    .protect-btn,
+    .check-link {
+        font-size: 0.8rem;
     }
     .result-card {
         padding: 5px;
     }
-    .uv-index {
-        font-size: 1.2rem;
-    }
-    .advice {
+    .uv-index,
+    .table-caption {
         font-size: 1rem;
     }
+    .advice,
     .error {
         font-size: 0.8rem;
     }
     .about-paragraph {
         font-size: 0.8rem;
+        padding: 0 60px;
     }
-    .footer-paragraph {
-        margin-top: 40px;
-        font-size: 0.7rem;
+    th, td, tr {
+        font-size: 0.920rem;
+        padding: 3px;
     }
 }
 
