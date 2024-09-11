@@ -14,6 +14,20 @@ header {
     top: 20px;
 }
 
+.welcome-paragraph {
+    color: #ebe6e0;
+    padding: 30px 0;
+}
+
+.welcome-link {
+    color: #ebe6e0;
+    transition: all 0.3s ease;
+}
+
+.welcome-link:hover {
+    color: black;
+}
+
 .logo-container {
     display: flex;
     gap: 10px;
@@ -174,8 +188,7 @@ tr, th, td {
     margin-right: 1px;
 }
 
-
-@media(max-width: 425px) {
+@media (max-width: 425px) {
     .logo-container {
         margin-bottom: 50px;
         gap: 6px;
@@ -192,8 +205,12 @@ tr, th, td {
         font-size: 0.7rem;
         height: 15px;
     }
+    .welcome-paragraph {
+        font-size: 0.720rem;
+        text-align: center;
+    }
     .boy-img {
-        height: 60px;
+        height: 50px;
     }
     .title {
         font-size: 1.1rem;
@@ -201,7 +218,7 @@ tr, th, td {
     input,
     .protect-btn,
     .check-link {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .result-card {
         padding: 5px;
@@ -222,11 +239,17 @@ tr, th, td {
         font-size: 0.920rem;
         padding: 3px;
     }
+    .footer-paragraph {
+        font-size: 0.750rem;
+    }
 }
 
 @media (min-width: 426px) and (max-width: 769px) {
+    .welcome-paragraph {
+        font-size: 0.9rem;
+    }
     .title {
-        font-size: 1.7rem;
+        font-size: 1.750rem;
     }
     .boy-img {
         height: 80px;
