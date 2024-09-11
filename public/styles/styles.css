@@ -209,6 +209,9 @@ footer {
         font-size: 0.7rem;
         height: 15px;
     }
+    .container {
+        height: 65vh;
+    }
     .welcome-paragraph {
         font-size: 0.720rem;
         text-align: center;
